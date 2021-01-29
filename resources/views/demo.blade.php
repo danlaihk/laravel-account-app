@@ -1,14 +1,4 @@
-<!--
-=========================================================
-Material Dashboard - v2.1.2
-=========================================================
 
-Product Page: https://www.creative-tim.com/product/material-dashboard
-Copyright 2020 Creative Tim (https://www.creative-tim.com)
-Coded by Creative Tim
-
-=========================================================
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -35,7 +25,7 @@ The above copyright notice and this permission notice shall be included in all c
 
 <body class="">
   <div class="wrapper ">
-    <div class="sidebar" data-color="purple" data-background-color="white" data-image="{{asset("vendor/material-dashboard/img/sidebar-1.jpg")}}">
+    <div class="sidebar" data-color="green" data-background-color="white" data-image="{{asset("vendor/material-dashboard/img/sidebar-1.jpg")}}">
       <!--
         Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
 
@@ -103,6 +93,7 @@ The above copyright notice and this permission notice shall be included in all c
         </ul>
       </div>
     </div>
+
     <div class="main-panel">
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
@@ -170,8 +161,13 @@ The above copyright notice and this permission notice shall be included in all c
         </div>
       </nav>
       <!-- End Navbar -->
+
       <div class="content">
         <div class="container-fluid">
+
+          {{-- content --}}
+
+
           <div class="row">
             <div class="col-lg-3 col-md-6 col-sm-6">
               <div class="card card-stats">
@@ -583,6 +579,9 @@ The above copyright notice and this permission notice shall be included in all c
               </div>
             </div>
           </div>
+
+          {{-- content end --}}
+
         </div>
       </div>
       <footer class="footer">
