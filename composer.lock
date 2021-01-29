@@ -7220,5 +7220,8 @@
         "php": "^7.3|^8.0"
     },
     "platform-dev": [],
+    "platform-overrides": {
+        "php": "8.0.1"
+    },
     "plugin-api-version": "2.0.0"
 }

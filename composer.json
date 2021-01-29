@@ -24,13 +24,18 @@
         "phpunit/phpunit": "^9.3.3"
     },
     "config": {
+        "platform": {
+            "php": "8.0.1"
+        },
         "optimize-autoloader": true,
         "preferred-install": "dist",
         "sort-packages": true
     },
     "extra": {
         "laravel": {
-            "dont-discover": []
+            "dont-discover": [
+                "laravel/dusk"
+            ]
         }
     },
     "autoload": {
