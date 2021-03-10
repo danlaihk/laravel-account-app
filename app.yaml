@@ -21,4 +21,15 @@ env_variables:
   APP_STORAGE: /tmp
   VIEW_COMPILED_PATH: /tmp
   SESSION_DRIVER: cookie
+
+  DB_HOST: 34.92.63.140
+  DB_DATABASE: accountapp
+  DB_USERNAME: root
+  DB_PASSWORD: wallecommerce
+  DB_SOCKET: "/cloudsql/poised-epigram-307002:asia-east2:account-app"
+  APP_DEBUG: true
+  APP_LOG: errorlog
   # APP_DEBUG: false
+
+beta_settings:
+  cloud_sql_instances: "poised-epigram-307002:asia-east2:account-app"
