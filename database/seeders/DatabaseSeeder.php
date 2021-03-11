@@ -13,6 +13,11 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+        $this->call([
+            DayAccountSeeder::class,
+        ]);
+        $this->command->info('Day Account table seeded!');
+
         // \App\Models\User::factory(10)->create();
     }
 }

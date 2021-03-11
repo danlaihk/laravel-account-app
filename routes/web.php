@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Service\Layouts\Menu;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,11 +14,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
+
+Route::middleware(['adminMenu', 'setLocale:en'])->group(function () {
+    Route::get('/', function () { return redirect('admin'); })->name('index');
+    Route::get('admin',  'Admin\Panel@Index')->name('panel.index');
+    Route::get('day-account','Account\DayAccounts@Index')->name('dayAccount.index');
 });
 
-Route::get('/test',function(){
-    // dd(asset('/vendor/material-dashboard/css/material-dashboard.min.css'));
-    return view('dashboard');
-});
+
+
+
+
+Route::get('testDB', function(){
+    dd(\App\Models\Account\DayAccount::all());
+
+})->name('test.testDB');
